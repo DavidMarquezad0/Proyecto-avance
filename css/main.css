@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Poiret+One&display=swap');
+
+
+:root {
+    --lg-font: 'Crimson Text', serif;
+    --sm-font: 'Poiret One', sans-serif;
+    --gray: #9c9e98;
+    --white: #fafbfa;
+    --dark: #2c2c2c;
+    --brown: #8e7d6e;
+
+}
+body{
+    font-family: var(--sm-font);    
+}
+
+.bg-primary{
+    background-color: var(--gray);
+}
+
+h1 {
+    font-family: var(--lg-font);
+
+}
+
+p {
+    color: black;
+    font-size: 1.2rem;
+}
+

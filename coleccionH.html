@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colección Hombre - Marquez</title>
-
+    <link rel="icon" href="img/logo.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -13,13 +13,12 @@
 </head>
 
 <body>
+    <header>
+        <div class="d-flex justify-content-between sm">
 
 
-
-    <header class="mt-3">
-        <div class="d-flex justify-content-between ">
             <div class="col-3">
-                <img class="btn" src="img/menu.png" alt="menu">
+                <h1 class="d-flex justify-content-center ms-4">Marquez</h1>
             </div>
 
 
@@ -29,19 +28,32 @@
                     <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                         aria-describedby="search-addon">
                     <span class="input-group-text border-0" id="search-addon">
-                        <i class="bi bi-search"></i>
+                        <i class="bi bi-search"></a></i>
                     </span>
                 </div>
             </div>
 
 
             <div class="col-3 d-flex justify-content-end">
-                <div class="btn">
-                    <h2 class="bi bi-person"></h2>
-                </div>
-                <div class="btn">
-                    <h2 class="bi bi-cart2"></h2>
-                </div>
+                <button class="btn bi bi-person"></button>
+
+                <section id="menu" class="menu rounded-start">
+                    <div class="d-flex mt-1">
+                        <h3 class="text-center col-11 d-flex justify-content-center">Carrito</h3>
+                        <button class="col-1 btn rounded-pill text-uppercase menuClose" id="button-toogle-menuClose"
+                            onclick="toogleClose()">x</button>
+                    </div>
+                    <div class="container">
+                        <div class="d-flex justify-content-center">
+                            <a href="coleccionH.html" class="btn">Coleccion Hombre</a>
+                            <a href="coleccionM.html" class="btn">Coleccion Mujer</a>
+                        </div>
+                        <h5>Productos Seleccionados</h5>
+                    </div>
+
+                </section>
+                <button class="btn bi bi-cart2" id="button-toogle-menu" onclick="toogleMenu()"></button>
+
             </div>
         </div>
     </header>
@@ -57,8 +69,10 @@
     <section class="d-flex">
         <div class="col-2"></div>
         <div class="col-8 d-flex justify-content-center">
-            <a href=""><img src="img/Colección Hombres/camisa azul.jpg" alt="Camisa Azul"></a>
-            <a href=""><img src="img/Colección Hombres/sandalia.jpg" alt="sandalia Negra"></a>
+            <a href="products-main/colección Hombre/model1.html"><img src="img/Colección Hombres/camisa azul.jpg"
+                    alt="Camisa Azul"></a>
+            <a href="products-main/colección Hombre/model2.html"><img src="img/Colección Hombres/sandalia.jpg"
+                    alt="sandalia Negra"></a>
         </div>
         <div class="col-2"></div>
     </section>
@@ -69,14 +83,30 @@
 
         <div class="col-10 d-flex mt-4">
 
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/camisa crema.jpg" alt="Camisa Crema"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/camisa estampado.jpg" alt="Camisa Estampado"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/camisa manchas.jpg" alt="Camisa Manchas"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/camisa melon.jpg" alt="Camisa Melon"></a>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/colección Hombre/product1.html"><img
+                        class="w-75" src="img/Colección Hombres/camisa crema.jpg" alt="Camisa Crema"></a>
+                <p class="text-center">Camisa Crema </p>
+                <p class="text-center">S/89.90</p>
+            </div>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/colección Hombre/product2.html"><img
+                        class="w-75" src="img/Colección Hombres/camisa estampado.jpg" alt="Camisa Estampado"></a>
+                <p class="text-center">Camisa Estampado </p>
+                <p class="text-center">S/90</p>
+            </div>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/colección Hombre/product3.html"><img
+                        class="w-75" src="img/Colección Hombres/camisa manchas.jpg" alt="Camisa Manchas"></a>
+                <p class="text-center">Camisa Manchas </p>
+                <p class="text-center">S/105.90</p>
+            </div>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/New Products/product1.html"><img
+                        class="w-75" src="img/Colección Hombres/camisa melonnew.jpeg" alt="Camisa Melon"></a>
+                <p class="text-center">Camisa Melon</p>
+                <p class="text-center">S/110</p>
+            </div>
 
         </div>
 
@@ -90,14 +120,31 @@
 
         <div class="col-10 d-flex mt-4">
 
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/camiseta arena.jpg" alt="Camiseta Arena"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/camiseta blanca.jpg" alt="Camiseta Blanca"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/camiseta crema.jpg" alt="Camiseta Crema"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/camiseta speed racer.jpg" alt="Camiseta Speed Racer"></a>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/colección Hombre/product5.html"><img
+                        class="w-75" src="img/Colección Hombres/camiseta arena.jpg" alt="Camiseta Arena"></a>
+                <p class="text-center">Camiseta Arena </p>
+                <p class="text-center">S/80.99</p>
+            </div>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/discounts/product2.html"><img class="w-75"
+                        src="img/Colección Hombres/camiseta blancanew.jpeg" alt="Camiseta Blanca"></a>
+                <p class="text-center">Camiseta Blanca</p>
+                <p class="text-center">S/95</p>
+            </div>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/colección Hombre/product7.html"><img
+                        class="w-75" src="img/Colección Hombres/camiseta crema.jpg" alt="Camiseta Crema"></a>
+                <p class="text-center">Camiseta Crema </p>
+                <p class="text-center">S/91.90</p>
+            </div>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/colección Hombre/product8.html"><img
+                        class="w-75" src="img/Colección Hombres/camiseta speed racer.jpg"
+                        alt="Camiseta Speed Racer"></a>
+                <p class="text-center">Camiseta Speed Racer </p>
+                <p class="text-center">S/89</p>
+            </div>
 
         </div>
 
@@ -111,60 +158,57 @@
 
         <div class="col-10 d-flex mt-4">
 
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/pantalon beige.jpg" alt="Pantalon Beige"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/pantalon crema.jpg" alt="Pantalon Crema"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/pantalon marron.jpg" alt="Pantalon Marron"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/pantalon verde.jpg" alt="Pantalon Verde"></a>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/colección Hombre/product9.html"><img
+                        class="w-75" src="img/Colección Hombres/pantalon beige.jpg" alt="Pantalon Beige"></a>
+                <p class="text-center">Pantalon Beige </p>
+                <p class="text-center">S/90.89</p>
+            </div>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/colección Hombre/product10.html"><img
+                        class="w-75" src="img/Colección Hombres/pantalon crema.jpg" alt="Pantalon Crema"></a>
+                <p class="text-center">Pantalon Crema</p>
+                <p class="text-center">S/87</p>
+            </div>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/discounts/product1.html"><img class="w-75"
+                        src="img/Colección Hombres/cazadora estampadonew.jpeg" alt="Cazadora Estampado"></a>
+                <p class="text-center">Cazadora Estampado </p>
+                <p class="text-center">S/150</p>
+            </div>
+            <div>
+                <a class="d-flex justify-content-center" href="products-main/colección Hombre/product12.html"><img
+                        class="w-75" src="img/Colección Hombres/sudadera speedracer.jpg" alt="Sudadera Speed Racer"></a>
+                <p class="text-center">Sudadera Speed Racer</p>
+                <p class="text-center">S/155</p>
+            </div>
 
         </div>
 
         <div class="col-1"></div>
 
     </section>
-    <br>
-    <section class="d-flex">
-
-        <div class="col-1"></div>
-
-        <div class="col-10 d-flex mt-4">
-
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/jogger azul.jpg" alt="Jogger Azul"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/jogger blanco.jpg" alt="Jogger blanco"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/jogger marino.jpg" alt="Jogger Marino"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/jogger negro.jpg" alt="Jogger Negro"></a>
-
+    <footer>
+        <div class="container d-flex justify-content-evenly">
+            <div class="mt-5">
+                <h4 class="text-center">Contactanos</h4>
+                <p>Correo: MarquezOficial@gmail.com</p>
+            </div>
+            <div class="mt-5">
+                <h4>libro de reclamaciones</h4>
+                <img width="100px" src="img/librodereclamacion.png" alt="">
+            </div>
+            <div class="mt-5">
+                <h4>Redes</h4>
+                <a class="text-decoration-none text-reset" href="">Instagram</a>
+                <br>
+                <a class="text-decoration-none text-reset" href="">Facebook</a>
+                <br>
+                <a class="text-decoration-none text-reset" href="">Youtube</a>
+            </div>
         </div>
-
-        <div class="col-1"></div>
-
-    </section>
-    <br>
-    <section class="d-flex">
-
-        <div class="col-1"></div>
-
-        <div class="col-10 d-flex mt-4">
-
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/cazadora estampado.jpg" alt="Cazadora Estampado"></a>
-            <a class="d-flex justify-content-center" href=""><img class="w-75"
-                    src="img/Colección Hombres/sudadera speedracer.jpg" alt="Sudadera Speed Racer"></a>
-            <img class="w-25" src="img/" alt="">
-            <img class="w-25" src="img/" alt="">
-
-        </div>
-
-        <div class="col-1"></div>
-
-    </section>
+    </footer>
+    <script src="main-js/menu.js"></script>
 </body>
 
 </html>

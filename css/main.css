@@ -1,7 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Poiret+One&display=swap');
 
-
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
 :root {
     --lg-font: 'Crimson Text', serif;
     --sm-font: 'Poiret One', sans-serif;
@@ -12,7 +17,10 @@
 
 }
 body{
-    font-family: var(--sm-font);    
+    font-family: var(--sm-font);
+    width: 100%;
+    overflow-x: hidden;          
+
 }
 
 .bg-primary{
@@ -27,5 +35,30 @@ h1 {
 p {
     color: black;
     font-size: 1.2rem;
+}
+
+.menu {
+    background-color: #747b86;
+    color: white;
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    right: -400px;
+    transition: right 1.5s;
+
+    
+}
+
+.menu--is-open{
+    right: 0px;
+}
+
+.menu--is-close{
+    right: 0px;
+}
+
+footer {
+    background-color: #b3b3b3;
+    height: 200px;
 }
 

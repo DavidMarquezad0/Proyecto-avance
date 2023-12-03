@@ -1,12 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Poiret+One&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
 }
+
 :root {
     --lg-font: 'Crimson Text', serif;
     --sm-font: 'Poiret One', sans-serif;
@@ -16,14 +16,15 @@
     --brown: #8e7d6e;
 
 }
-body{
+
+body {
     font-family: var(--sm-font);
-    width: 100%;
-    overflow-x: hidden;          
+
+
 
 }
 
-.bg-primary{
+.bg-primary {
     background-color: var(--gray);
 }
 
@@ -46,19 +47,55 @@ p {
     right: -400px;
     transition: right 1.5s;
 
-    
+
 }
 
-.menu--is-open{
+.menu--is-open {
     right: 0px;
 }
 
-.menu--is-close{
+.menu--is-close {
     right: 0px;
 }
 
 footer {
     background-color: #b3b3b3;
     height: 200px;
+}
+
+.fit-content {
+    font-size: 50px;
+}
+
+
+@media (max-width: 576px) {
+    .menu {
+        width: 70%;
+    }
+    .fit-content {
+        font-size: 14px;
+        height: 200px;
+    }
+    h4 {
+        font-size: 10px; 
+    }
+    p {
+        font-size: 10px;
+    }
+
+    .fit__content--products{
+        gap: 10px;
+    }
+    
+    h3 {
+        font-size: 10px;
+    }
+
+    .btn-responsive {
+        display: flex;
+        justify-content: center;
+    }
+
+
 }
 

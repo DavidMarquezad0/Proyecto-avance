@@ -7,7 +7,7 @@
     <title>Blazer Negro - Marquez</title>
     <link rel="icon" href="../../img/logo.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/main.css">
 </head>
 
@@ -15,17 +15,17 @@
 
 
     <header>
-        <div class="d-flex justify-content-between sm">
+        <div class="d-flex justify-content-between container-sm-flex">
 
 
-            <div class="col-3">
-                <h1 class="d-flex justify-content-center ms-4">Marquez</h1>
+            <div class="col-3 container-sm-flex">
+                <h1 class="d-flex justify-content-center mt-2 ms-4">Marquez</h1>
             </div>
 
 
-            <div class="col-6">
+            <div class="col-6 container-sm-flex">
 
-                <div class="input-group rounded mt-2">
+                <div class="input-group rounded mt-2 container-sm">
                     <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                         aria-describedby="search-addon">
                     <span class="input-group-text border-0" id="search-addon">
@@ -35,10 +35,10 @@
             </div>
 
 
-            <div class="col-3 d-flex justify-content-end">
+            <div class="col-3 d-flex justify-content-end container-sm-flex">
                 <button class="btn bi bi-person"></button>
 
-                <section id="menu" class="menu rounded-start">
+                <section id="menu" class="menu rounded-start z-2">
                     <div class="d-flex mt-1">
                         <h3 class="text-center col-11 d-flex justify-content-center">Carrito</h3>
                         <button class="col-1 btn rounded-pill text-uppercase menuClose" id="button-toogle-menuClose"
@@ -59,7 +59,7 @@
         </div>
     </header>
 
-    <section class="d-flex container justify-content-center">
+    <section class="d-flex container justify-content-center fit__content--products">
         <div class="col-4 d-flex justify-content-center">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
@@ -90,7 +90,7 @@
         </div>
 
 
-        <div class="col-4 d-flex align-items-center">
+        <div class="col-4 d-flex align-items-center fit__description--products"> <!--usar clase-->
             <div class=" mx-auto" style="width: 400px;">
                 <div class="d-flex justify-content-center text-uppercase">
                     <h3> Blazer negro </h3>
@@ -98,20 +98,20 @@
                 <p>Blazer relaxed fit. Cuello con solapas de muesca y manga larga acabada en puño con botón. Bolsillos de solapa en cadera. Cierre frontal con botones a presión.</p>
 
 
-                <div class="d-flex gap-1 mb-2">
+                <div class="d-flex gap-1 mb-2 btn-responsive">
                     <button class="btn btn-outline-secondary col-6 border-black"
                         onclick="seleccionarTalla('S')">S</button>
                     <button class="btn btn-outline-secondary col-6 border-black"
                         onclick="seleccionarTalla('M')">M</button>
                 </div>
-                <div class="d-flex gap-1 ">
+                <div class="d-flex gap-1 btn-responsive">
                     <button class="btn btn-outline-secondary col-6 border-black"
                         onclick="seleccionarTalla('L')">L</button>
                     <button class="btn btn-outline-secondary col-6 border-black"
                         onclick="seleccionarTalla('XL')">XL</button>
                 </div>
 
-                <button class="btn btn-outline-success col-12 border-black mt-5"
+                <button class="btn btn-outline-success col-12 border-black mt-5 btn-responsive"
                     onclick="añadirProducto('Blazer Negro')">Añadir al carrito</button>
             </div>
         </div>
@@ -119,7 +119,7 @@
 
     <script src="../../main-js/menu.js"></script>
     <script src="../../main-js/options.js"></script>
-    <script src="../../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

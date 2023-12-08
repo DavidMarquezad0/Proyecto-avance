@@ -63,8 +63,8 @@ footer {
     height: 200px;
 }
 
-.fit-content {
-    font-size: 50px;
+.fit__content--text {
+    font-size: 38px;
 }
 
 
@@ -72,9 +72,9 @@ footer {
     .menu {
         width: 70%;
     }
-    .fit-content {
-        font-size: 14px;
-        height: 200px;
+    .fit__content--text {
+        font-size: 24px;
+        height: 500px;
     }
     h4 {
         font-size: 10px; 
@@ -82,20 +82,14 @@ footer {
     p {
         font-size: 10px;
     }
-
-    .fit__content--products{
-        gap: 10px;
-    }
-    
     h3 {
-        font-size: 10px;
+        font-size: 20px;
     }
 
-    .btn-responsive {
-        display: flex;
-        justify-content: center;
+    .container-text {
+        height: 250px;
     }
-
 
 }
+    
 

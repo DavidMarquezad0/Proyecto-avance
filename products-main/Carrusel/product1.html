@@ -7,25 +7,23 @@
     <title>Blazer Negro - Marquez</title>
     <link rel="icon" href="../../img/logo.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/main.css">
 </head>
 
 <body>
+    <header class="container-xxl-flex container">
+        <div class="d-flex justify-content-between container-xxl-flex">
 
-
-    <header>
-        <div class="d-flex justify-content-between container-sm-flex">
-
-
-            <div class="col-3 container-sm-flex">
+            <div class="col-xxl-3 container-xxl-flex">
                 <h1 class="d-flex justify-content-center mt-2 ms-4">Marquez</h1>
             </div>
 
 
-            <div class="col-6 container-sm-flex">
+            <div class="col-xxl-6 container-xxl-flex">
 
-                <div class="input-group rounded mt-2 container-sm">
+                <div class="input-group rounded mt-2 container-xxl-flex">
                     <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                         aria-describedby="search-addon">
                     <span class="input-group-text border-0" id="search-addon">
@@ -35,7 +33,7 @@
             </div>
 
 
-            <div class="col-3 d-flex justify-content-end container-sm-flex">
+            <div class="col-xxl-3 d-flex justify-content-end container-xxl-flex">
                 <button class="btn bi bi-person"></button>
 
                 <section id="menu" class="menu rounded-start z-2">
@@ -45,9 +43,9 @@
                             onclick="toogleClose()">x</button>
                     </div>
                     <div class="container">
-                        <div class="d-flex justify-content-center">
-                            <a href="coleccionH.html" class="btn">Coleccion Hombre</a>
-                            <a href="coleccionM.html" class="btn">Coleccion Mujer</a>
+                        <div class="d-block">
+                            <a href="../../coleccionH.html" class="text-warning btn">Coleccion Hombre</a>
+                            <a href="../../coleccionM.html" class="text-warning btn">Coleccion Mujer</a>
                         </div>
                         <h5>Productos Seleccionados</h5>
                     </div>
@@ -59,67 +57,76 @@
         </div>
     </header>
 
-    <section class="d-flex container justify-content-center fit__content--products">
-        <div class="col-4 d-flex justify-content-center">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../../img/model1_1.jpg" class="d-block w-100" alt="...">
+    <section class="d-flex container">
+
+        <div class="col-xxl-2 col-2"></div>
+
+        <div class="col-xxl-8 col-8 d-xxl-flex">
+
+            <div class="col-xxl-6 container">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../img/model1_1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/blazer negro.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/blazer negro1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/blazer negro2.jpg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../../img/blazer negro.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../img/blazer negro1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../img/blazer negro2.jpg" class="d-block w-100" alt="...">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
+
+            <div class="col-xxl-6 container d-xxl-flex align-items-xxl-center">
+                <div class="d-block">
+                    <div class="d-flex justify-content-center text-uppercase">
+                        <h3> Blazer negro </h3>
+                    </div>
+                    <p>Blazer relaxed fit. Cuello con solapas de muesca y manga larga acabada en puño con botón. Bolsillos
+                        de solapa en cadera. Cierre frontal con botones a presión.</p>
+                    <div class="d-flex gap-1 mb-2 btn-responsive">
+                        <button class="btn btn-outline-secondary col-6 border-black"
+                            onclick="seleccionarTalla('S')">S</button>
+                        <button class="btn btn-outline-secondary col-6 border-black"
+                            onclick="seleccionarTalla('M')">M</button>
+                    </div>
+                    <div class="d-flex gap-1 btn-responsive">
+                        <button class="btn btn-outline-secondary col-6 border-black"
+                            onclick="seleccionarTalla('L')">L</button>
+                        <button class="btn btn-outline-secondary col-6 border-black"
+                            onclick="seleccionarTalla('XL')">XL</button>
+                    </div>
+                    <button class="btn btn-outline-success col-12 border-black mt-5 btn-responsive"
+                        onclick="añadirProducto('Blazer Negro')">Añadir al carrito</button>
+                </div>
+            </div>
+
         </div>
 
+        <div class="col-xxl-2 col-2"></div>
 
-        <div class="col-4 d-flex align-items-center fit__description--products"> <!--usar clase-->
-            <div class=" mx-auto" style="width: 400px;">
-                <div class="d-flex justify-content-center text-uppercase">
-                    <h3> Blazer negro </h3>
-                </div>
-                <p>Blazer relaxed fit. Cuello con solapas de muesca y manga larga acabada en puño con botón. Bolsillos de solapa en cadera. Cierre frontal con botones a presión.</p>
-
-
-                <div class="d-flex gap-1 mb-2 btn-responsive">
-                    <button class="btn btn-outline-secondary col-6 border-black"
-                        onclick="seleccionarTalla('S')">S</button>
-                    <button class="btn btn-outline-secondary col-6 border-black"
-                        onclick="seleccionarTalla('M')">M</button>
-                </div>
-                <div class="d-flex gap-1 btn-responsive">
-                    <button class="btn btn-outline-secondary col-6 border-black"
-                        onclick="seleccionarTalla('L')">L</button>
-                    <button class="btn btn-outline-secondary col-6 border-black"
-                        onclick="seleccionarTalla('XL')">XL</button>
-                </div>
-
-                <button class="btn btn-outline-success col-12 border-black mt-5 btn-responsive"
-                    onclick="añadirProducto('Blazer Negro')">Añadir al carrito</button>
-            </div>
-        </div>
     </section>
 
     <script src="../../main-js/menu.js"></script>
     <script src="../../main-js/options.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

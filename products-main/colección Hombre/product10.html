@@ -12,20 +12,17 @@
 </head>
 
 <body>
+    <header class="container-xxl-flex container">
+        <div class="d-flex justify-content-between container-xxl-flex">
 
-
-    <header>
-        <div class="d-flex justify-content-between sm">
-
-
-            <div class="col-3">
-                <h1 class="d-flex justify-content-center ms-4">Marquez</h1>
+            <div class="col-xxl-3 container-xxl-flex">
+                <h1 class="d-flex justify-content-center mt-2 ms-4">Marquez</h1>
             </div>
 
 
-            <div class="col-6">
+            <div class="col-xxl-6 container-xxl-flex">
 
-                <div class="input-group rounded mt-2">
+                <div class="input-group rounded mt-2 container-xxl-flex">
                     <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                         aria-describedby="search-addon">
                     <span class="input-group-text border-0" id="search-addon">
@@ -35,19 +32,19 @@
             </div>
 
 
-            <div class="col-3 d-flex justify-content-end">
+            <div class="col-xxl-3 d-flex justify-content-end container-xxl-flex">
                 <button class="btn bi bi-person"></button>
 
-                <section id="menu" class="menu rounded-start">
+                <section id="menu" class="menu rounded-start z-2">
                     <div class="d-flex mt-1">
                         <h3 class="text-center col-11 d-flex justify-content-center">Carrito</h3>
                         <button class="col-1 btn rounded-pill text-uppercase menuClose" id="button-toogle-menuClose"
                             onclick="toogleClose()">x</button>
                     </div>
                     <div class="container">
-                        <div class="d-flex justify-content-center">
-                            <a href="coleccionH.html" class="btn">Coleccion Hombre</a>
-                            <a href="coleccionM.html" class="btn">Coleccion Mujer</a>
+                        <div class="d-block">
+                            <a href="../../coleccionH.html" class="text-warning btn">Coleccion Hombre</a>
+                            <a href="../../coleccionM.html" class="text-warning btn">Coleccion Mujer</a>
                         </div>
                         <h5>Productos Seleccionados</h5>
                     </div>
@@ -59,59 +56,61 @@
         </div>
     </header>
 
-    <section class="d-flex container justify-content-center">
-        <div class="col-4 d-flex justify-content-center">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../../img/Colección Hombres/pantalon crema.jpg" class="d-block w-100" alt="...">
+    <section class="d-flex container">
+
+        <div class="col-xxl-2 col-2"></div>
+
+        <div class="col-xxl-8 col-8 d-xxl-flex">
+
+            <div class="col-xxl-6 container">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../img/Colección Hombres/pantalon crema.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/Colección Hombres/pantalon crema1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../img/Colección Hombres/pantalon crema2.jpg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="../../img/Colección Hombres/pantalon crema1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../img/Colección Hombres/pantalon crema2.jpg" class="d-block w-100" alt="...">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+            <div class="col-xxl-6 container d-xxl-flex align-items-xxl-center">
+                <div class="d-block">
+                    <div class="d-flex justify-content-center text-uppercase">
+                        <h3> Pantalon Crema </h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo fugiat aliquam distinctio illo architecto corporis quod quibusdam officiis quasi? Voluptatem temporibus eius adipisci consequatur quos rerum fugit facere asperiores.</p>
+                    <div class="d-flex gap-1 mb-2 btn-responsive">
+                        <button class="btn btn-outline-secondary col-6 border-black"
+                            onclick="seleccionarTalla('S')">S</button>
+                        <button class="btn btn-outline-secondary col-6 border-black"
+                            onclick="seleccionarTalla('M')">M</button>
+                    </div>
+                    <div class="d-flex gap-1 btn-responsive">
+                        <button class="btn btn-outline-secondary col-6 border-black"
+                            onclick="seleccionarTalla('L')">L</button>
+                        <button class="btn btn-outline-secondary col-6 border-black"
+                            onclick="seleccionarTalla('XL')">XL</button>
+                    </div>
+                    <button class="btn btn-outline-success col-12 border-black mt-5"
+                        onclick="añadirProducto('Pantalon Crema')">Añadir al carrito</button>
+                </div>
             </div>
         </div>
-
-
-        <div class="col-4 d-flex align-items-center">
-            <div class=" mx-auto" style="width: 400px;">
-                <div class="d-flex justify-content-center text-uppercase">
-                    <h3> Pantalon Crema </h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo fugiat aliquam distinctio illo architecto corporis quod quibusdam officiis quasi? Voluptatem temporibus eius adipisci consequatur quos rerum fugit facere asperiores.</p>
-
-
-                <div class="d-flex gap-1 mb-2">
-                    <button class="btn btn-outline-secondary col-6 border-black"
-                        onclick="seleccionarTalla('S')">S</button>
-                    <button class="btn btn-outline-secondary col-6 border-black"
-                        onclick="seleccionarTalla('M')">M</button>
-                </div>
-                <div class="d-flex gap-1 ">
-                    <button class="btn btn-outline-secondary col-6 border-black"
-                        onclick="seleccionarTalla('L')">L</button>
-                    <button class="btn btn-outline-secondary col-6 border-black"
-                        onclick="seleccionarTalla('XL')">XL</button>
-                </div>
-
-                <button class="btn btn-outline-success col-12 border-black mt-5"
-                    onclick="añadirProducto('Pantalon Crema')">Añadir al carrito</button>
-            </div>
-        </div>
+        <div class="col-xxl-2 col-2"></div>
     </section>
 
     <script src="../../main-js/menu.js"></script>

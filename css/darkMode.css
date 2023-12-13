@@ -1,0 +1,13 @@
+.dark-mode>header {
+    background-color: rgb(70, 68, 68);
+    color: white;
+}
+
+.dark-mode {
+    background-color: rgb(70, 68, 68);
+    color: white;
+}   
+
+.dark-mode>p {
+    background-color: yellow;
+}
